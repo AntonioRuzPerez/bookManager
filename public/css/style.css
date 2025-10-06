@@ -1,0 +1,124 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Contenedor principal de la aplicación */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #b22222;
+    color: white;
+    padding: 15px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Estilos para el selector de idioma */
+.language-selector {
+    font-size: 14px;
+}
+.language-selector a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+.language-selector a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.language-selector a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+
+/* Contenedor para la barra lateral y el área de contenido principal */
+.main-content-wrapper {
+    display: flex;
+    flex-grow: 1;
+}
+
+/* Estilos para la barra lateral (columna izquierda) */
+.sidebar {
+    width: 220px;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-right: 1px solid #ffcccc;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+/* Estilos para el área de contenido principal (columna derecha) */
+.content-area {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#bookResult {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#bookResult th, #bookResult td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#bookResult th {
+    background-color: #b22222;
+    color: white;
+}
+
+#bookResult tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#bookResult tr:hover {
+    background-color: #ddd;
+}
